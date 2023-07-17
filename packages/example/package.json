@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@jkomyno/example",
+  "name": "@alex/example",
   "version": "0.1.0",
   "description": "Example that imports a local package",
   "main": "lib",
@@ -15,6 +15,6 @@
     "pretest": "jest --clearCache"
   },
   "dependencies": {
-    "@jkomyno/common-utils": "workspace:*"
+    "@alex/common-utils": "workspace:*"
   }
 }

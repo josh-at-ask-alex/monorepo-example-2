@@ -1,4 +1,4 @@
-import { sum } from '@jkomyno/common-utils'
+import { sum } from '@alex/common-utils'
 
 function main() {
   const arr = [1, 2, 3]

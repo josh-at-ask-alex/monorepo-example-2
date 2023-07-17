@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@jkomyno/common-utils",
+  "name": "@alex/common-utils",
   "version": "0.1.0",
   "description": "Library that contains common utility functions",
   "main": "lib",
