@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@alex/api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm clean && tsc",
+    "prettier-check": "prettier --parser=typescript \"src/**/*.{js,ts}\" --check",
+    "prettier-write": "prettier --parser=typescript \"src/**/*.{js,ts}\" --write",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@alex/types": "workspace:*"
+  }
+}

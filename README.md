@@ -8,7 +8,7 @@
 
 ## What's Included
 
-- `pnpm` workspace, whose configuration is stored in [`pnpm-workspace.yaml`](/pnpm-workspace.yaml). Two example packages are included, [`common-utils`](packages/common-utils) and [`example`](packages/example), with the latter importing `common-utils` as a dependency. All local packages are decorated with a `@alex/*` scope (you may want to substitute these instances in the `name` entries of any `package.json` with yours or your company's name).
+- `pnpm` workspace, whose configuration is stored in [`pnpm-workspace.yaml`](/pnpm-workspace.yaml). Two example packages are included, [`types`](packages/types) and [`example`](packages/example), with the latter importing `types` as a dependency. All local packages are decorated with a `@alex/*` scope (you may want to substitute these instances in the `name` entries of any `package.json` with yours or your company's name).
 - `turborepo`, whose configuration is stored in [`turbo.json`](./turbo.json)
 - an example [`Dockerfile`](./Dockerfile.pnpm) that can be built and used as a base image for your Node.js Docker containers.
 - the `jest` test engine, whose configuration is stored in the [`packages/jest`](./packages/jest) folder.
@@ -37,7 +37,7 @@ In each local package's `package.json` file, make sure to replace the `JEST_LIB_
 
 1. How do I add a new package to the local workspace?
 
-- Create a new folder `$packageName` in [`packages/`](packages/). Initialize it with a `tsconfig.json` file (which will reference the [`tsconfig.base.node.json`](./tsconfig.base.node.json) file at the root level) and a `package.json` file similarly to how it's done in the [`common-utils`](packages/common-utils) package.
+- Create a new folder `$packageName` in [`packages/`](packages/). Initialize it with a `tsconfig.json` file (which will reference the [`tsconfig.base.node.json`](./tsconfig.base.node.json) file at the root level) and a `package.json` file similarly to how it's done in the [`types`](packages/types) package.
 
 2. How do I add a new depedency that should be available to each package in the local workspace?
 
