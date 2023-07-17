@@ -3,7 +3,7 @@
   "name": "@alex/types",
   "version": "0.1.0",
   "description": "",
-  "main": "dist",
+  "main": "./dist",
   "scripts": {
     "clean": "rimraf dist",
     "build": "pnpm clean && tsc",

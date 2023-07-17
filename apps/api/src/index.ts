@@ -1,4 +1,4 @@
-import { sum } from '@alex/types'
+import { sum, yosef } from '@alex/types'
 
 function main() {
   const arr = [1, 2, 3]

@@ -13,9 +13,12 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "esnext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "lib": ["ES2020"],
+    "module": "CommonJS",
+    "target": "ES2020"
+  },
+  "ts-node": {
+    "files": true
   }
 }
