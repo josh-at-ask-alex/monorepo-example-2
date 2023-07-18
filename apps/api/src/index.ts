@@ -15,12 +15,12 @@ app.get('/workspaces', (req: Request, res: Response) => {
   const workspaces: Workspace[] = [
     { name: 'api', version: '1.0.0', type: WorkspaceType.Cold },
     { name: 'types', version: '1.0.0', type: WorkspaceType.Hot },
-    { name: 'web', version: '1.0.0', type: WorkspaceType.Hot },
+    { name: 'web', version: '1.0.0', type: WorkspaceType.Cold },
   ]
 
   logIt()
 
-  res.status(200).json(workspaces)
+  res.json({ data: workspaces })
 })
 
 app.listen(port, () => console.log(`Listening on http://localhost:${port}`))
