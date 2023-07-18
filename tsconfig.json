@@ -12,13 +12,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "lib": ["ES2020"],
+
     "module": "CommonJS",
-    "target": "ES2020"
-  },
-  "ts-node": {
-    "files": true
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"]
   }
 }
