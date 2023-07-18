@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@alex/api",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist",
   "scripts": {
@@ -11,6 +11,9 @@
     "prettier-check": "prettier --parser=typescript \"src/**/*.{js,ts}\" --check",
     "prettier-write": "prettier --parser=typescript \"src/**/*.{js,ts}\" --write",
     "typecheck": "tsc"
+  },
+  "_moduleAliases": {
+    "@": "./src"
   },
   "dependencies": {
     "@alex/types": "workspace:*",
@@ -22,6 +25,7 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/module-alias": "^2.0.1",
+    "concurrently": "^8.2.0",
     "module-alias": "^2.2.3",
     "tsc-alias": "^1.8.7"
   }

@@ -4,6 +4,8 @@ import express, { Request, Response } from 'express'
 
 import { Workspace, WorkspaceType } from '@alex/types'
 
+import { logIt } from './logger'
+
 const app = express()
 const port = 8080
 
@@ -15,6 +17,8 @@ app.get('/workspaces', (req: Request, res: Response) => {
     { name: 'types', version: '1.0.0', type: WorkspaceType.Hot },
     { name: 'web', version: '1.0.0', type: WorkspaceType.Hot },
   ]
+
+  logIt()
 
   res.status(200).json(workspaces)
 })

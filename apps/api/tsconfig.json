@@ -8,7 +8,6 @@
       "@/*": ["./src/*"]
     },
     "noImplicitAny": false,
-    // "preserveSymlinks": true,
     "declaration": true,
     "declarationMap": true,
     "typeRoots": ["./src/@types", "./node_modules/@types"]
